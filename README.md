@@ -2,7 +2,7 @@
 
 <p align="center">
 
-  <img alt="Repository size" src="https://img.shields.io/github/repo-size/MrHencke/dwm?color=56BEB8">
+  <img alt="Repository size" src="https://img.shields.io/github/repo-size/MrHencke/hDWM?color=56BEB8">
 
 </p>
 
