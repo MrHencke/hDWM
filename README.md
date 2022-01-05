@@ -8,7 +8,7 @@
 
 <p align="center">
   <a href="#about">About</a> &#xa0; | &#xa0; 
-  <a href="#features">Features</a> &#xa0; | &#xa0;
+  <a href="#features">Features</a>
 </p>
 
 <br>
@@ -17,8 +17,10 @@
 
 This is my DWM config
 
+<br>
+
 ## Features
 
 Its pretty aight
 
-<a href="#top">Back to top</a>
+<a href="#top" align="center">Back to top</a>
