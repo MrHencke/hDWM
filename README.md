@@ -9,7 +9,6 @@
 <p align="center">
   <a href="#about">About</a> &#xa0; | &#xa0; 
   <a href="#features">Features</a> &#xa0; | &#xa0;
-  <a href="#license">License</a> &#xa0; | &#xa0;
 </p>
 
 <br>
@@ -21,9 +20,5 @@ This is my DWM config
 ## Features
 
 Its pretty aight
-
-## License
-
-This project is under license from MIT. For more details, see the [LICENSE](LICENSE.md) file.
 
 <a href="#top">Back to top</a>
