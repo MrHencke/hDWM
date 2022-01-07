@@ -4,7 +4,7 @@ resourcemon () {
 	free_output=$(free -h | grep Mem)
 	MEMUSED=$(echo $free_output | awk '{print $3}')
 	CPU=$(top -bn1 | grep Cpu | awk '{print $2}')%
-		printf " %s  %s" "${MEMUSED%?}" "$CPU"
+		printf "   %s   %s" "${MEMUSED%?}" "$CPU"
 }
 
 volume () {
@@ -14,18 +14,18 @@ volume () {
 microphone(){
     is_mute=$(pactl get-source-mute $(pactl get-default-source))
     if [ "$is_mute" = "Mute: yes" ]; then
-        echo "    "
+        echo "    0%  "
     else
-        echo "    "
+        echo "   100%  "
     fi
 }
 
-watch(){
-        printf " %s" "$(date "+%T")" 
+dclock(){
+        printf " %s  " "$(date "+%T")" 
 }
 
-date(){
-        printf " %s" "$(date "+%a %d-%m-%y")" 
+ddate(){
+        printf " %s  " "$(date "+%a %d-%m-%y")" 
 }
 
 
@@ -36,8 +36,8 @@ do
     upperbar="$( resourcemon )"
     upperbar="$upperbar$( volume )"
     upperbar="$upperbar$( microphone )"
-    upperbar="$upperbar$( watch )"
-    upperbar="$upperbar$( date )"
+    upperbar="$upperbar$( dclock )"
+    upperbar="$upperbar$( ddate )"
     xsetroot -name "$upperbar"
     sleep 1
 done
