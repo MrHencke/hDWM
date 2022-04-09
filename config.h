@@ -152,6 +152,7 @@ static Key keys[] = {
 	{ MODKEY,						XK_Up,	   spawn, 		   SHCMD("pactl set-sink-volume @DEFAULT_SINK@ +1000")},
 	{ MODKEY,						XK_Down,   spawn, 		   SHCMD("pactl set-sink-volume @DEFAULT_SINK@ -1000")},
 	{ ControlMask|MODKEYALT,		XK_Delete, spawn, 	 	   SHCMD("killall xinit")}, //Ctrl+Alt+Delete meme
+	{ MODKEY|ShiftMask,				XK_L, 	   spawn, 	 	   SHCMD("slock")}, //Ctrl+Alt+Delete meme
 
 	TAGKEYS(                        XK_1,                      0)
 	TAGKEYS(                        XK_2,                      1)
